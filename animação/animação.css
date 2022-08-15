@@ -1,0 +1,172 @@
+@keyframes animacao{
+from { background-color: red;}
+to { background-color:blue;}
+}
+@keyframes animacao2 {
+    0% {}
+    30%{width: 100px;}
+    60%{background-color: rgb(255, 0, 17);}
+    80%{left: 100px; background-color:blue;}
+    100%{height: 100px;}
+
+}
+@keyframes animacao3{
+    from{left: 0;}
+    to {left: 300px;background-color:green;}
+
+}
+@keyframes animacao4{
+    from{left: 0}
+    to{left:500px}
+}
+@keyframes animacao5{
+    0%{left: 0; }
+    25%{left: 50px; background-color:blue;}
+    60%{left: 200px; background-color:orange;}
+    100%{right: 30px; background-color: red;}
+}
+
+
+.animation-div{
+    width: 100px;
+    height: 100px;
+    background-color:red;
+    animation-name: animacao;
+    animation-duration: 5s;
+}
+.animation-div2{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    animation-name: animacao2;
+    animation-duration:6s;
+    position: relative;
+}
+.animation-div3 {
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    position: relative;
+    animation-name: animacao3;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count:3;
+  
+}
+ .box{
+    background-color:orange;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    animation-name: animacao4;
+    animation-duration: 5s;
+    animation-delay: 2s;
+ }
+
+ #animation-div4{
+    animation-timing-function: linear;
+ }
+ #animation-div5{
+    animation-timing-function: ease;
+ }
+ #animation-div6{
+    animation-timing-function: ease-in;
+ }
+ #animation-div7{
+    animation-timing-function: ease-out;
+ }
+ #animation-div8{
+    animation-timing-function: ease-in-out;
+ }
+
+ #animation-div9{
+    background-color:darkblue;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    animation: animacao5 8s ease-out 4s infinite;
+ }
+ .btn{
+    display: block;
+    position: relative;
+    padding: 10px;
+    margin-bottom:25px;
+    width: 75px;
+    height: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #333;
+    border:1px solid #333;
+    cursor: pointer;
+    text-align: center;
+    transition: 1s;
+
+ }
+.btn:hover{
+    color: #333;
+    background-color:#fff;
+}
+
+.transition{
+    width: 50px;
+    height:100px;
+    background-color: red;
+    transition: 4s;
+
+}
+.transition:hover{
+    width:300px
+}
+.div-calc{
+    height: 250px;
+    width: 500px;
+    position: relative;
+    margin: 20px;
+    background-color: #ddd;
+    border: 1px solid red
+}
+.innerdiv-calc{
+    height: 50px;
+    margin: 10px;
+    position: relative;
+    background-color: red;
+}
+.calc1{
+    width: calc(50% + 50px);
+
+}
+ .calc2{
+width: calc(50% - 100px);
+ }
+ .calc3{
+    width: calc(50% * 2);
+    margin: 0;
+ }
+ .calc4{
+    width: calc(50% / 2);
+ }
+
+ .gradient-box{
+    width: 500px;
+    height: 200px;
+    position: relative;
+    margin: 20;
+ }
+ .gradient1{
+    background-image:linear-gradient(green,yellow)
+ }
+ .gradient2{
+    background-image:linear-gradient(to right, red, green)
+ }
+ .gradient3{
+    background-image:linear-gradient(to left, rgb(143, 246, 25), rgb(255, 0, 255))
+ }
+ .gradient4{
+    background-image:linear-gradient(to top, rgb(253, 22, 6),rgb(82, 235, 219))
+ }
+ .gradient5{
+    background-image:linear-gradient(to top right, rgb(229, 13, 20), rgb(222, 239, 28))
+ }
+ .gradient6{
+    background-image:linear-gradient(purple,blue, green)
+ }
